@@ -2,7 +2,7 @@ import { COMMA_ARABIC, COMMA_LATIN } from '@scrabble-solver/constants';
 import { Locale } from '@scrabble-solver/types';
 import { FunctionComponent, SVGAttributes } from 'react';
 
-import { FlagDe, FlagEs, FlagFa, FlagFr, FlagGb, FlagPl, FlagUs } from 'icons';
+import { FlagDe, FlagEs, FlagEsCT, FlagFa, FlagFr, FlagGb, FlagPl, FlagUs } from 'icons';
 
 import styles from './i18n.module.scss';
 
@@ -15,6 +15,13 @@ interface LocaleFeatures {
 }
 
 export const LOCALE_FEATURES: Record<Locale, LocaleFeatures> = {
+  [Locale.CA_ES]: {
+    comma: COMMA_LATIN,
+    consonants: true,
+    direction: 'ltr',
+    separator: `${COMMA_LATIN} `,
+    vowels: true,
+  },
   [Locale.DE_DE]: {
     comma: COMMA_LATIN,
     consonants: true,
@@ -75,6 +82,13 @@ interface Flag {
 }
 
 export const LOCALE_FLAGS: Record<Locale, Flag> = {
+  [Locale.CA_ES]: {
+    className: styles.ca,
+    Icon: FlagEsCT,
+    label: 'Català',
+    name: 'Catalan',
+    value: Locale.CA_ES,
+  },
   [Locale.DE_DE]: {
     className: styles.de,
     Icon: FlagDe,

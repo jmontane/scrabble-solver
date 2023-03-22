@@ -1,7 +1,7 @@
 import { Config, Locale } from '@scrabble-solver/types';
 
 import bonuses from './bonuses';
-import { tilesEn, tilesEs, tilesFa, tilesFr, tilesPl, tilesDe } from './tiles';
+import { tilesEn, tilesEs, tilesFa, tilesFr, tilesPl, tilesDe, tilesCa } from './tiles';
 
 const base = {
   allTilesBonusScore: 50,
@@ -19,6 +19,7 @@ const scrabble = {
   id: base.id,
   name: base.name,
   [Locale.EN_GB]: Config.fromJson({ ...base, tiles: tilesEn }),
+  [Locale.CA_ES]: Config.fromJson({ ...base, tiles: tilesCa }),
   [Locale.DE_DE]: Config.fromJson({ ...base, tiles: tilesDe }),
   [Locale.EN_US]: Config.fromJson({ ...base, tiles: tilesEn }),
   [Locale.ES_ES]: Config.fromJson({ ...base, tiles: tilesEs }),

@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-shadow
 enum Locale {
+  CA_ES = 'ca-ES',
   DE_DE = 'de-DE',
   EN_GB = 'en-GB',
   EN_US = 'en-US',
