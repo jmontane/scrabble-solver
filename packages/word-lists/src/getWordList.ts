@@ -1,5 +1,6 @@
 import { Locale } from '@scrabble-solver/types';
 
+import getCaEsWordList from './getCaEsWordList';
 import getDeDeWordList from './getDeDeWordList';
 import getEnGbWordList from './getEnGbWordList';
 import getEnUsWordList from './getEnUsWordList';
@@ -9,6 +10,7 @@ import getFrFrWordList from './getFrFrWordList';
 import getPlPlWordList from './getPlPlWordList';
 
 const localeMap: Record<Locale, () => Promise<string[]>> = {
+  [Locale.CA_ES]: getCaEsWordList,
   [Locale.DE_DE]: getDeDeWordList,
   [Locale.EN_GB]: getEnGbWordList,
   [Locale.EN_US]: getEnUsWordList,
