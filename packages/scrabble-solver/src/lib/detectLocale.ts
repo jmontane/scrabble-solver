@@ -17,7 +17,7 @@ const detectLocale = (): Locale => {
     return Locale.FR_FR;
   }
 
-  if (window.navigator.languages.includes('ca')) || window.navigator.languages.includes('ca-ES') || window.navigator.languages.includes('ca-valencia') || window.navigator.languages.includes('ca-ES-valencia')){
+  if (window.navigator.languages.includes('ca') || window.navigator.languages.includes('ca-ES')) {
     return Locale.CA_ES;
   }
 

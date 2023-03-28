@@ -22,6 +22,7 @@ export { default as EyeFill } from './EyeFill.svg';
 export { default as Flag } from './Flag.svg';
 export { default as FlagDe } from './FlagDe.svg';
 export { default as FlagEs } from './FlagEs.svg';
+export { default as FlagEsCt } from './FlagEsCt.svg';
 export { default as FlagFa } from './FlagFa.svg';
 export { default as FlagFill } from './FlagFill.svg';
 export { default as FlagFr } from './FlagFr.svg';

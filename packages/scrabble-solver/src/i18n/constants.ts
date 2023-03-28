@@ -2,7 +2,7 @@ import { COMMA_ARABIC, COMMA_LATIN } from '@scrabble-solver/constants';
 import { Locale } from '@scrabble-solver/types';
 import { FunctionComponent, SVGAttributes } from 'react';
 
-import { FlagDe, FlagEs, FlagEsCT, FlagFa, FlagFr, FlagGb, FlagPl, FlagUs } from 'icons';
+import { FlagDe, FlagEs, FlagEsCt, FlagFa, FlagFr, FlagGb, FlagPl, FlagUs } from 'icons';
 
 import styles from './i18n.module.scss';
 
@@ -84,7 +84,7 @@ interface Flag {
 export const LOCALE_FLAGS: Record<Locale, Flag> = {
   [Locale.CA_ES]: {
     className: styles.ca,
-    Icon: FlagEsCT,
+    Icon: FlagEsCt,
     label: 'Català',
     name: 'Catalan',
     value: Locale.CA_ES,
