@@ -83,7 +83,7 @@ interface Flag {
 
 export const LOCALE_FLAGS: Record<Locale, Flag> = {
   [Locale.CA_ES]: {
-    className: styles.ca,
+    className: styles.esct,
     Icon: FlagEsCt,
     label: 'Català',
     name: 'Catalan',
