@@ -56,7 +56,7 @@ const isConsonant = (tile: RemainingTile): boolean => CONSONANTS.includes(tile.c
 
 const isVowel = (tile: RemainingTile): boolean => VOWELS.includes(tile.character);
 
-const isTwoCharacter = (tile: RemainingTile): boolean => tile.character.length === 2;
+const isTwoCharacter = (tile: RemainingTile): boolean => tile.character.length === 2 || tile.character === 'l·l';
 
 const isBlank = (tile: RemainingTile): boolean => tile.character === BLANK;
 

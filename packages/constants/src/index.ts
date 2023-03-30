@@ -12,6 +12,6 @@ export const EMPTY_CELL = ' ';
 
 export const NO_BONUS = { characterMultiplier: 1, wordMultiplier: 1 };
 
-export const CONSONANTS = 'bcćdfghjklłmnńñpqrsśtvwxzźż'.split('');
+export const CONSONANTS = 'bcćçdfghjklłmnńñpqrsśtvwxzźż'.split('');
 
 export const VOWELS = 'aąäeęioóöuüy'.split('');
